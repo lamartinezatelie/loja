@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 2em;
+        }
+        .portfolio-item {
+            background-color: #fff;
+            padding: 1em;
+            margin: 1em 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form {
+            background-color: #fff;
+            padding: 2em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .payment-methods {
+            background-color: #fff;
+            padding: 2em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 1em;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.5em;
+            box-sizing: border-box;
+        }
+        .form-group button {
+            padding: 0.5em 1em;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Portfólio</h1>
+        <nav>
+            <ul>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#payment">Meio de Pagamento</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <div class="portfolio-item">
+            <h3>Projeto 1</h3>
+            <p>Descrição do projeto 1.</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Projeto 2</h3>
+            <p>Descrição do projeto 2.</p>
+        </div>
+        <!-- Adicione mais projetos conforme necessário -->
+    </section>
+    <section id="contact">
+        <h2>Contato</h2>
+        <div class="contact-form">
+            <form action="mailto:seuemail@exemplo.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="payment">
+        <h2>Meio de Pagamento</h2>
+        <div class="payment-methods">
+            <p>Você pode efetuar o pagamento utilizando os seguintes métodos:</p>
+            <ul>
+                <li>Cartão de Crédito</li>
+                <li>Cartão de Débito</li>
+                <li>PIX</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
